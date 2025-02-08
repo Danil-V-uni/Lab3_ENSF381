@@ -39,12 +39,16 @@
 	background-color: #bdbbbb;
 }
 
+.navbar .dropdown {
+	display: none;
+} 
+
+
 .navitem:hover .dropdown {
 	display: flex;
-	opacity: 100%;
 	flex-direction: column;
 	position: absolute;
-	top: 7.5%;
+	top: 6%;
 	left: 1%;
 	background-color: white;
 	min-width: 200px;
@@ -55,14 +59,12 @@
 	flex-direction: column;
 }
 
-.navbar .dropdown {
-	display: none
-}
-
 .navitem:hover .dropdown .dropdownitem {
+	display: flex;
 	padding: 10px;
 	color: black;
 	border-bottom: 1px solid #ddd;
+	background-color: white;
 
 	a {
 		color: black;
